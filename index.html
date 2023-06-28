@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Nicolosi - DEV</title>
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- CSS Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#about">
+            <span class="navbar-brand__name">GN-DEV</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#estudios">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Sobre mi -->
+      <section id="about" class="section main-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 main-about__title">
+              <!-- Imagen -->
+              <div class="float-end main-about__image">
+                <img
+                  src="./assets/images/IMG_20230617_161420.jpg"
+                  alt="Gabriel Nicolosi image"
+                  class="img"
+                />
+              </div>
+              <!-- Titulo -->
+              <div class="main-about__title--container">
+                <h1 class="main-about__title--title">
+                  HOLA, SOY GABRIEL NICOLOSI
+                </h1>
+                <h2 class="main-about__title--subtitle">
+                  WEB APP DEVELOPER Jr. FRONTEND
+                </h2>
+              </div>
+            </div>
+            <!-- Presentación -->
+            <div class="main-about__paragraph">
+              <p>
+                Desarrollador Frontend Junior apasionado por crear experiencias
+                web atractivas e impactantes, y con sólidos conocimientos en
+                HTML, CSS y JavaScript. Destaco por mi capacidad para resolver
+                problemas de manera creativa y colaborativa durante proyectos
+                desafiantes. Durante mi formación, he creado sitios web
+                responsivos y amigables para dispositivos móviles, demostrando
+                mi compromiso con aprender nuevas tecnologías y aportar ideas
+                innovadoras. Con habilidades destacadas en librerías como
+                Bootstrap y en frameworks como React, estoy listo para enfrentar
+                nuevos desafíos y entregar resultados de calidad en equipos
+                dinámicos. ¡Permíteme mostrar mi pasión y habilidades para
+                impulsar el éxito de tus proyectos!
+              </p>
+            </div>
+          </div>
+          <!-- Download Button -->
+          <div class="download">
+            <button class="button">
+              <a
+                download="CV_Gabriel-Nicolosi"
+                href="./assets/CV-Gabriel-Nicolosi.pdf"
+                ><i class="fa-solid fa-download icon-dwl"></i>Descargar CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Estudios -->
+      <section id="estudios" class="section main-estudios">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h3 class="main-estudios__title">Mi educación</h3>
+            <!-- card Desarrollo Web -->
+            <div class="cards">
+              <!-- front -->
+              <div class="face front">
+                <div class="image">
+                  <img
+                    style="width: 100%"
+                    src="./assets/images/desarrollo.png"
+                    alt="Certificación Desarrollo web"
+                  />
+                </div>
+                <div class="cards-title">
+                  <h4 class="cards-text">Desarrollador Web</h4>
+                </div>
+              </div>
+              <!-- back -->
+              <div class="face back">
+                <div class="cards-title">
+                  <h4 class="cards-text">Desarrollador Web</h4>
+                </div>
+                <p>
+                  Certificación en Desarrollo Web con HTML5 y CSS3 otorgada por
+                  Coderhause, que acredita mi conocimiento y habilidades en la
+                  creación de sitios web estáticos. Durante la cursada adquirí
+                  habilidades en el uso de etiquetas HTML y estilos CSS, diseño
+                  responsivo, accesibilidad y buenas prácticas de desarrollo
+                  web. También adquirí conocimientos en Bootstrap.
+                </p>
+              </div>
+            </div>
+            <!-- card JavaScript -->
+            <div class="cards">
+              <!-- front -->
+              <div class="face front">
+                <div class="image">
+                  <img
+                    style="width: 100%"
+                    src="./assets/images/javascript.png"
+                    alt="Certificación Javascript"
+                  />
+                </div>
+                <div class="cards-title">
+                  <h4 class="cards-text">JavaScript</h4>
+                </div>
+              </div>
+              <!-- back -->
+              <div class="face back">
+                <div class="cards-title">
+                  <h4 class="cards-text">JavaScript</h4>
+                </div>
+                <p>
+                  Certificación en JavaScript otorgada por Coderhause, que
+                  acredita mi conocimiento y habilidades en el lenguaje de
+                  programación. Durante la cursada adquirí habilidades en el uso
+                  de estructuras de datos y algoritmos, programación orientada a
+                  objetos, asincronía y promesas, manipulación del dom, y buenas
+                  prácticas de programación. También adquirí conocimientos en
+                  librerias como Sweet Alert, Luxon, Vegas y otras.
+                </p>
+              </div>
+            </div>
+            <!-- card React -->
+            <div class="cards">
+              <!-- front -->
+              <div class="face front">
+                <div class="image">
+                  <img
+                    style="width: 100%"
+                    src="./assets/images/react.png"
+                    alt="Certificación React Js"
+                  />
+                </div>
+                <div class="cards-title">
+                  <h4 class="cards-text">React Js</h4>
+                </div>
+              </div>
+              <!-- back -->
+              <div class="face back">
+                <div class="cards-title">
+                  <h4 class="cards-text">React Js</h4>
+                </div>
+                <p>
+                  Certificación en Resct Js otorgada por Coderhause, que
+                  acredita mi conocimiento y habilidades en la creación de
+                  sitios web dinámicos. Durante la cursada adquirí habilidades
+                  en la creacion aplicaciones web a partir de componentes
+                  reutilizables, virtual dom, ciclos de vida, hooks,consumición
+                  de APIs, persistencia y peticiones en bases de datos como
+                  Firebase, como tambbién las buenas prácticas de desarrollo y
+                  programación web.
+                </p>
+              </div>
+            </div>
+            <!-- card Backend -->
+            <div class="cards">
+              <!-- front -->
+              <div class="face front">
+                <div class="image">
+                  <img
+                    style="width: 100%"
+                    src="./assets/images/desarrollo.png"
+                    alt="Certificación Desarrollo Backend"
+                  />
+                </div>
+                <div class="cards-title">
+                  <h4 class="cards-text">Desarrollador Backend</h4>
+                </div>
+              </div>
+              <!-- back -->
+              <div class="face back">
+                <div class="cards-title">
+                  <h4 class="cards-text">Desarrollador Backend</h4>
+                </div>
+                <p>
+                  Certificación en Desarrollo Web Backend con Node.Js y Express
+                  otorgada por Coderhause, que acredita mi conocimiento y
+                  habilidades en la creación de servidores web. Durante la
+                  cursada estoy adquiriendo habilidades en servidores express,
+                  manejo de archivos, middlewares, métodos para peticiones,
+                  manejo d herramientas como Postman, motores de plantillas,
+                  websockets, bases de datos (MongoDB), indexación, populations,
+                  aggregation, paginación, CRUD, session, autenticación y
+                  autorización
+                  <!-- completar a medida que avanza la cursada -->
+                  y buenas prácticas de desarrollo backend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio" class="section main-portfolio">
+        <div class="container">
+          <div class="row">
+            <h3 class="main-portfolio__title">Mis Proyectos</h3>
+            <!-- Cards -->
+            <div class="main-portfolio__cards col-md-6 mx-auto">
+              <!-- Meraki -->
+              <div class="card" style="width: 18rem">
+                <a
+                  href="https://creacionesmeraki.000webhostapp.com/"
+                  target="_blank"
+                  ><img
+                    src="./assets/images/meraki.png"
+                    class="card-img-top"
+                    alt="creacionesmeraki.000webhostapp.com"
+                  />
+                </a>
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Meraki - arte hecho con amor
+                  </p>
+                  <p class="card-text text-center">HTML - CSS3 - Bootstrap 5</p>
+                </div>
+              </div>
+              <!-- Presupuesto instalación -->
+              <div class="card" style="width: 18rem">
+                <a
+                  href="https://gabrielnicolosi2022.github.io/PlanInstalAireAcond/"
+                  target="_blank"
+                  ><img
+                    src="./assets/images/presupuestoinstal.png"
+                    class="card-img-top"
+                    alt="PlanInstalAireAcond"
+                /></a>
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Presupuesto de instalación
+                  </p>
+                  <p class="card-text text-center">JavaScript</p>
+                </div>
+              </div>
+              <!-- Electroword -->
+              <div class="card" style="width: 18rem">
+                <a href="https://electroworld.vercel.app/" target="_blank">
+                  <img
+                    src="./assets/images/electroword.png"
+                    class="card-img-top"
+                    alt="electroword.vercel.app"
+                  />
+                </a>
+                <div class="card-body">
+                  <p class="card-text text-center">Electroword</p>
+                  <p class="card-text text-center">React</p>
+                </div>
+              </div>
+              <!-- EcommBack -->
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./assets/images/ecommback.png"
+                  class="card-img-top"
+                  alt="ecommback image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">EcommBack</p>
+                  <p class="card-text text-center">Backend Express.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contacto -->
+      <section id="contacto" class="section main-contacto">
+        <div class="container">
+          <div class="row justify_content_center">
+            <div class="col-md-6">
+              <!-- Contact Form -->
+              <div class="box">
+                <span class="borderLine"></span>
+                <form
+                  class="form"
+                  id="form"
+                  action="https://formspree.io/f/xyyqgyjq"
+                  method="post"
+                >
+                  <h2>Contáctame</h2>
+                  <div class="inputBox">
+                    <input type="text" name="name" id="name" required />
+                    <span>Nombre y Apellido</span>
+                    <i></i>
+                  </div>
+                  <div class="inputBox">
+                    <input type="email" name="email" id="email" required />
+                    <span>Correo electrónico</span>
+                    <i></i>
+                  </div>
+                  <div class="inputBox">
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="42"
+                      rows="3"
+                      required
+                    ></textarea>
+                    <span>Mensaje</span>
+                    <i></i>
+                  </div>
+                  <input class="button" type="submit" value="Enviar mensaje" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Contáctame -->
+          <div
+            class="footer-card__contacto col-lg-4 col-md-6 col-sm-6 col-xs-12"
+          >
+            <h4 class="footer-card__contacto--title text-center">Contáctame</h4>
+            <ul class="footer-card__contacto--name">
+              <!-- Linkedin -->
+              <li class="text-center">
+                <a
+                  href="https://www.linkedin.com/in/gabriel-alejandro-nicolosi-web-developer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="bi bi-linkedin text-primary fs-2 me-2"></i
+                  >Linkedin</a
+                >
+              </li>
+              <!-- Whattsapp -->
+              <li class="text-center">
+                <a href="https://wa.me/540111530462293" target="_blank"
+                  ><i
+                    class="bi bi-whatsapp text-success fs-2 me-2 footer-card__icons"
+                  ></i
+                  >Whattsapp
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Secciones -->
+          <div
+            class="footer-card__secciones col-lg-4 col-md-6 col-sm-6 col-xs-12"
+          >
+            <ul class="text-center footer-card__secciones--name">
+              <li>
+                <a href="#about" class="footer-card__secciones--link"
+                  ><i class="bi bi-house text-light me-2"></i>Inicio</a
+                >
+              </li>
+              <li>
+                <a href="#estudios" class="footer-card__secciones--link"
+                  ><i class="bi bi-book text-light me-2"></i>Estudios</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="footer-card__secciones--link"
+                  ><i class="bi bi-briefcase text-light me-2"></i>Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-card__secciones--link">Curriculum</a>
+              </li>
+              <li>
+                <a href="#" class="footer-card__secciones--link"
+                  ><i class="bi bi-envelope-at text-light me-2"></i
+                  >Contáctame</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Créditos -->
+          <div
+            class="footer-card__creditos col-lg-4 col-md-6 col-sm-6 col-xs-12"
+          >
+            <div class="footer-card__creditos--name">
+              <spam class="footer-card__creditos--title">Créditos </spam
+              ><a
+                href="https://www.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_16406729.htm#page=3&query=developer%20background&position=21&from_view=keyword&track=ais"
+                target="_blank"
+                >Image by rawpixel.com</a
+              >
+              on Freepik
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b9dbf6ad9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SweetAlert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Own Scripts -->
+    <script src="./js/contactForm.js"></script>
+  </body>
+</html>
