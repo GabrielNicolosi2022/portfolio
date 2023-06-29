@@ -16,7 +16,7 @@ Paleta de colores
 #222
 #1c1c1c
 #000
-*/ 
+*/
 
 * {
   margin: 0;
@@ -47,7 +47,6 @@ li a {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #04d9d9;
   background-color: #c0c0c0;
   top: 0;
 }
@@ -95,8 +94,8 @@ li a {
   background-position: center;
   background-attachment: fixed;
   opacity: 90%;
+  padding-top: 60px;
 }
-
 /* Imagen de portada */
 .main-about__image {
   margin-right: 6vw;
@@ -105,9 +104,6 @@ li a {
 .img {
   width: 18vw;
   border-radius: 70% 30% 45% 55% / 52% 76% 24% 48%;
-}
-.img:hover {
-  border-radius: 42% 58% 31% 69% / 69% 45% 55% 31%;
 }
 
 /* Titulo de portada */
@@ -122,21 +118,25 @@ li a {
 .main-about__title--subtitle {
   color: #04d9d9;
 }
-
+.main-about__title--title {
+  font-size: 1.4em;
+}
+.main-about__title--subtitle {
+  font-size: 1.1em;
+}
 /* Presentación */
 .main-about__paragraph {
   margin: 2% auto;
   color: #c0c0c0;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /*  STUDY CARDS */
 .cards {
   position: relative;
-  width: 400px;
-  height: 415.2px;
+  width: 300px;
+  height: 315.2px;
   margin: 25px;
-  /* background-color: #023059; */
 }
 
 .cards .face {
@@ -196,7 +196,6 @@ li a {
 
 .cards .back .cards-title {
   top: 0;
-  /* background-color: #102541; */
   background-color: #023059;
   width: 100%;
   height: 6.48rem;
@@ -224,15 +223,7 @@ li a {
 /* end study cards */
 
 /* ESTUDIOS y PORTFOLIO */
-.main-estudios,
-.main-contacto {
-  /* background-color: #023059; */
-  background-color: #102541;
-}
-.main-portfolio {
-  /* background-color: #0476d9; */
-  background-color: #102541;
-}
+
 .main-estudios,
 .main-portfolio,
 .main-contacto {
@@ -241,10 +232,11 @@ li a {
   flex-wrap: wrap;
   justify-content: center;
   scroll-margin-top: 7ex;
+  background-color: #102541;
 }
 .main-estudios__title,
 .main-portfolio__title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #c0c0c0;
 }
@@ -257,31 +249,11 @@ li a {
   justify-content: center;
 }
 .card {
+  width: 300px;
   position: relative;
   margin: 3% 3%;
 }
 /* end studys and portfolio */
-
-/* FOOTER */
-.footer {
-  position: relative;
-}
-.footer-card__contacto--name,
-.footer-card__secciones--name {
-  font-size: 1.4rem;
-}
-.footer-card__secciones--link {
-  color: #c0c0c0;
-}
-.footer-card__secciones ul {
-  margin-top: 2vh;
-}
-.footer-card__secciones--link:hover,
-.footer-card__contacto--name a:hover,
-.footer-card__creditos--name a:hover {
-  color: #04d9d9;
-}
-/* end footer */
 
 /* CONTACT FORM */
 #send-mail {
@@ -292,8 +264,7 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #23242a;
+  min-height: 91vh;
   background-color: #102541;
   font-family: 'Poppins', sans-serif;
 }
@@ -508,3 +479,82 @@ li a {
   opacity: 0.8;
 }
 /* end contact form */
+/* FOOTER */
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-card__contacto--list,
+.footer-card__secciones--list {
+  font-size: 1.4rem;
+}
+.footer-card__contacto--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-card__contacto--list .redes img {
+  margin: 0 1em;
+  width: 40px;
+}
+
+.footer-card__contacto--list .redes img:hover {
+  filter: drop-shadow(0 0px 10px #fff);
+  -webkit-filter: drop-shadow(0 0px 10px #fff);
+}
+
+.footer-card__secciones--link {
+  color: #c0c0c0;
+}
+.footer-card__secciones ul {
+  margin-top: 2vh;
+}
+.footer-card__secciones--link:hover,
+.footer-card__contacto--name a:hover {
+  color: #04d9d9;
+}
+
+.copyright {
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+  text-align: center;
+  color: #c0c0c0;
+}
+/* end footer */
+
+@media (min-width: 992px) {
+  .main-about {
+    padding-top: 0;
+  }
+  .img:hover {
+    border-radius: 42% 58% 31% 69% / 69% 45% 55% 31%;
+  }
+  .main-about__title--title {
+    font-size: 3em;
+  }
+  .main-about__title--subtitle {
+    font-size: 2em;
+  }
+  .main-about__paragraph {
+    font-size: 1.2em;
+  }
+  /*  Study Cards */
+  .cards {
+    width: 400px;
+    height: 415.2px;
+  }
+  .main-estudios__title,
+  .main-portfolio__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #c0c0c0;
+  }
+  /* Portfolio Cards */
+  .card {
+    width: 400px;
+  }
+}
