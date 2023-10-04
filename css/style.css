@@ -28,6 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
 ul,
 li a {
   list-style: none;
@@ -102,7 +103,7 @@ li a {
   margin-top: -6vh;
 }
 .img {
-  width: 18vw;
+  width: 14vw;
   border-radius: 70% 30% 45% 55% / 52% 76% 24% 48%;
 }
 
@@ -131,6 +132,30 @@ li a {
   font-size: 1em;
 }
 
+.skills {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skills .wrapper {
+  width: 100%;
+}
+.wrapper .title {
+  color: #c0c0c0;
+}
+.icons {
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 2rem;
+}
+.icons img {
+  margin: 1rem;
+}
 /*  STUDY CARDS */
 .cards {
   position: relative;
@@ -178,19 +203,23 @@ li a {
 .cards .front h4,
 .cards .back h4 {
   position: relative;
-  line-height: 6.48rem;
   text-align: center;
+}
+
+.cards .front h4 {
+  line-height: 6.48rem;
 }
 /* Back */
 .cards .back {
   transform: perspective(50rem) rotateY(180deg);
-  /* background: #102541; */
+  /*background: #102541;
+  */
   background: #023059;
   padding: 15px;
   color: #c0c0c0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   box-shadow: 0 5px 10px #000;
 }
 
