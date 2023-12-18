@@ -88,7 +88,7 @@ li a {
 .main-about {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url(../assets/images/rm378-09.jpg);
   background-size: cover;
   background-repeat: no-repeat;
